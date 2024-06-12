@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GeometrySystem._2D
+﻿namespace GeometrySystem._2D
 {
     /// <summary>
     /// 几何形状
@@ -22,5 +16,12 @@ namespace GeometrySystem._2D
         /// </summary>
         /// <returns></returns>
         public abstract double GetPerimeter();
+
+        /// <summary>
+        /// 重叠检测，检测两个多边形是否重叠
+        /// </summary>
+        /// <param name="other">其他形状</param>
+        /// <returns>重叠就返回true，不重叠就返回false</returns>
+        public abstract bool OverLaps(Shape other);
     }
 }
